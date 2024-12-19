@@ -1,6 +1,6 @@
 <p align="center">
-    <img alt="ViewCount" src="https://views.whatilearened.today/views/github/MShawon/github-clone-count-badge.svg">
-    <a href='https://github.com/MShawon/github-clone-count-badge'><img alt='GitHub Clones' src='https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url=https://gist.githubusercontent.com/MShawon/cf89f3274d06170b8a4973039aa6220a/raw/clone.json&logo=github'></a>
+    <img alt="ViewCount" src="https://views.whatilearened.today/views/github/mike-live/github-clone-count-badge.svg">
+    <a href='https://github.com/mike-live/github-clone-count-badge'><img alt='GitHub Clones' src='https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url=https://gist.githubusercontent.com/mike-live/cf89f3274d06170b8a4973039aa6220a/raw/clone.json&logo=github'></a>
 </p>
 
 # GitHub Clone Count Badge
@@ -67,7 +67,7 @@ jobs:
 
       - name: update clone.json
         run: |
-          curl https://raw.githubusercontent.com/MShawon/github-clone-count-badge/master/main.py > main.py
+          curl https://raw.githubusercontent.com/mike-live/github-clone-count-badge/master/main.py > main.py
           python3 main.py
 
       - name: Update gist with latest count
@@ -82,7 +82,7 @@ jobs:
           if [ ! -f CLONE.md ]; then
             shields="https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url="
             url="https://gist.githubusercontent.com/${{ github.actor }}/${{ steps.set_id.outputs.GIST }}/raw/clone.json"
-            repo="https://github.com/MShawon/github-clone-count-badge"
+            repo="https://github.com/mike-live/github-clone-count-badge"
             echo ''> CLONE.md
             echo '
             **Markdown**
